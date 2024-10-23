@@ -28,7 +28,6 @@ async function startApp() {
 
     // MongoDB Connection
     const mongo = await MongoClient.connect(mongoUri, {
-      ssl:true,
     });
 
     db = mongo.db();
